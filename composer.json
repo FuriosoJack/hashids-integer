@@ -1,11 +1,26 @@
 {
     "name": "furiosojack/hashids-integer",
+    "type": "package",
     "authors": [
         {
             "name": "FuriosoJack",
             "email": "iam@furiosojack.com"
         }
     ],
-    "minimum-stability": "dev",
+    "autoload":{
+        "psr-4": {
+            "FuriosoJack\\HashidsInteger\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FuriosoJack\\HashidsInteger\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "symfony/thanks": "^1.0",
+        "phpunit/phpunit": "^7"
+    },
+    "minimum-stability": "stable",
     "require": {}
 }
