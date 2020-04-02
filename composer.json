@@ -1,0 +1,11 @@
+{
+    "name": "furiosojack/hashids-integer",
+    "authors": [
+        {
+            "name": "FuriosoJack",
+            "email": "iam@furiosojack.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
