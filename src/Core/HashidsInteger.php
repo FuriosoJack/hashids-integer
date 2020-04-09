@@ -125,15 +125,9 @@ class HashidsInteger implements HashidsIntegerInterface
      *
      * @return string
      */
-    public function encode()
+    public function encode(array $numbers)
     {
         $ret = '';
-        $numbers = func_get_args();
-
-        if (func_num_args() == 1 && is_array(func_get_arg(0))) {
-            $numbers = $numbers[0];
-        }
-
         if (!$numbers) {
             if ($this->prefix !== null) {
                 return $this->prefix.$this->prefixSeparator.$ret;

@@ -11,7 +11,7 @@ interface HashidsIntegerInterface
      *
      * @return string
      */
-    public function encode();
+    public function encode(array $numbers);
 
     /**
      * Decode a hash to the original parameter values.
